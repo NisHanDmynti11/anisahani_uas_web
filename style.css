@@ -1,0 +1,67 @@
+/* Reset dan pengaturan dasar */
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: #86869c; /* Warna latar belakang */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Gaya untuk elemen navigasi */
+nav {
+  background-color: rgb(223, 223, 245);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  overflow: hidden; /* Menangani elemen meluap */
+}
+
+/* Branding navigasi */
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-brand img {
+  width: 100px;
+  height: auto; /* Menjaga proporsi gambar */
+  margin-right: 15px; /* Jarak antara gambar dan teks */
+}
+
+.nav-brand h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #050510;
+}
+
+/* Gaya untuk daftar menu */
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #050510;
+  padding: 8px 0;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 300ms ease-in-out;
+}
+
+nav ul li a:hover {
+  border-bottom: 1px solid black;
+}
